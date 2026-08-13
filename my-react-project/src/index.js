@@ -1,12 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import StudentDetails from './pages/StudentDetails';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <h1>Welcome to React JS</h1>
-  </React.StrictMode>
+    < StudentDetails />
 );
 
 
