@@ -1,11 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import RestaurantOrder from './pages/RestaurantOrder';
+import StudentParent from './pages/StudentParent';
+
+
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    < RestaurantOrder />
+    < StudentParent />
 );
 
 
