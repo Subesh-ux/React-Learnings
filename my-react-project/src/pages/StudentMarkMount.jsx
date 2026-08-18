@@ -53,7 +53,7 @@ export default class StudentMarkMount extends Component{
                             <td>{this.state.studentMark}</td>
                             <td><button onClick={this.addMarks}>Add Marks</button></td>
                         </tr>
-
+            
                         <tr>
                             <td>Result</td>                            
                             <td>{this.state.result}</td>
