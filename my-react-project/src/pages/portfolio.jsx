@@ -16,13 +16,13 @@ export default function Portfolio(){
             <div>
                 <h1>My Portfolio</h1>
                 < Profile 
-                    studentName = {studentName}
-                    studentRole ={studentRole}
-                    studentMail ={studentMail}
-                    studentPhone ={studentPhone}
-                    studentBio = {studentBio}
-                    studentSkills = {studentSkills}
-                    academicYear = {academicYear}
+                    studentName = {studentDetails.studentName}
+                    studentRole ={studentDetails.studentRole}
+                    studentMail ={studentDetails.studentMail}
+                    studentPhone ={studentDetails.studentPhone}
+                    studentBio = {studentDetails.studentBio}
+                    studentSkills = {studentDetails.studentSkills}
+                    academicYear = {studentDetails.academicYear}
                 />
 
             </div>

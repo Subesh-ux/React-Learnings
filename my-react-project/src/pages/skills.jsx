@@ -1,4 +1,4 @@
-export default function Skills(studentSkills){
+export default function Skills({studentSkills}){
 
     return(
         <>
