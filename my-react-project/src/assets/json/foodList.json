@@ -1,0 +1,214 @@
+[
+  {
+    "id": 1,
+    "name": "Paneer Butter Masala",
+    "cuisine": "NorthIndian",
+    "type": "Veg",
+    "price": 220
+  },
+  {
+    "id": 2,
+    "name": "Butter Chicken",
+    "cuisine": "NorthIndian",
+    "type": "Non-Veg",
+    "price": 280
+  },
+  {
+    "id": 3,
+    "name": "Chole Bhature",
+    "cuisine": "NorthIndian",
+    "type": "Veg",
+    "price": 180
+  },
+  {
+    "id": 4,
+    "name": "Dal Makhani",
+    "cuisine": "NorthIndian",
+    "type": "Veg",
+    "price": 200
+  },
+  {
+    "id": 5,
+    "name": "Chicken Tikka",
+    "cuisine": "NorthIndian",
+    "type": "Non-Veg",
+    "price": 260
+  },
+  {
+    "id": 6,
+    "name": "Aloo Paratha",
+    "cuisine": "NorthIndian",
+    "type": "Veg",
+    "price": 120
+  },
+  {
+    "id": 7,
+    "name": "Rajma Chawal",
+    "cuisine": "NorthIndian",
+    "type": "Veg",
+    "price": 160
+  },
+  {
+    "id": 8,
+    "name": "Tandoori Chicken",
+    "cuisine": "NorthIndian",
+    "type": "Non-Veg",
+    "price": 320
+  },
+  {
+    "id": 9,
+    "name": "Palak Paneer",
+    "cuisine": "NorthIndian",
+    "type": "Veg",
+    "price": 210
+  },
+  {
+    "id": 10,
+    "name": "Mutton Rogan Josh",
+    "cuisine": "NorthIndian",
+    "type": "Non-Veg",
+    "price": 350
+  },
+
+  {
+    "id": 11,
+    "name": "Veg Hakka Noodles",
+    "cuisine": "Chinese",
+    "type": "Veg",
+    "price": 160
+  },
+  {
+    "id": 12,
+    "name": "Chicken Fried Rice",
+    "cuisine": "Chinese",
+    "type": "Non-Veg",
+    "price": 220
+  },
+  {
+    "id": 13,
+    "name": "Gobi Manchurian",
+    "cuisine": "Chinese",
+    "type": "Veg",
+    "price": 170
+  },
+  {
+    "id": 14,
+    "name": "Chicken Manchurian",
+    "cuisine": "Chinese",
+    "type": "Non-Veg",
+    "price": 240
+  },
+  {
+    "id": 15,
+    "name": "Veg Spring Rolls",
+    "cuisine": "Chinese",
+    "type": "Veg",
+    "price": 150
+  },
+  {
+    "id": 16,
+    "name": "Schezwan Chicken",
+    "cuisine": "Chinese",
+    "type": "Non-Veg",
+    "price": 260
+  },
+  {
+    "id": 17,
+    "name": "Chilli Paneer",
+    "cuisine": "Chinese",
+    "type": "Veg",
+    "price": 210
+  },
+  {
+    "id": 18,
+    "name": "Chicken Lollipop",
+    "cuisine": "Chinese",
+    "type": "Non-Veg",
+    "price": 280
+  },
+  {
+    "id": 19,
+    "name": "Veg Manchow Soup",
+    "cuisine": "Chinese",
+    "type": "Veg",
+    "price": 130
+  },
+  {
+    "id": 20,
+    "name": "Chicken Hot and Sour Soup",
+    "cuisine": "Chinese",
+    "type": "Non-Veg",
+    "price": 160
+  },
+
+  {
+    "id": 21,
+    "name": "Masala Dosa",
+    "cuisine": "SouthIndian",
+    "type": "Veg",
+    "price": 100
+  },
+  {
+    "id": 22,
+    "name": "Idli Sambar",
+    "cuisine": "SouthIndian",
+    "type": "Veg",
+    "price": 80
+  },
+  {
+    "id": 23,
+    "name": "Medu Vada",
+    "cuisine": "SouthIndian",
+    "type": "Veg",
+    "price": 90
+  },
+  {
+    "id": 24,
+    "name": "Plain Dosa",
+    "cuisine": "SouthIndian",
+    "type": "Veg",
+    "price": 80
+  },
+  {
+    "id": 25,
+    "name": "Paneer Dosa",
+    "cuisine": "SouthIndian",
+    "type": "Veg",
+    "price": 140
+  },
+  {
+    "id": 26,
+    "name": "Chicken Biryani",
+    "cuisine": "SouthIndian",
+    "type": "Non-Veg",
+    "price": 250
+  },
+  {
+    "id": 27,
+    "name": "Mutton Biryani",
+    "cuisine": "SouthIndian",
+    "type": "Non-Veg",
+    "price": 320
+  },
+  {
+    "id": 28,
+    "name": "Pongal",
+    "cuisine": "SouthIndian",
+    "type": "Veg",
+    "price": 100
+  },
+  {
+    "id": 29,
+    "name": "Uttapam",
+    "cuisine": "SouthIndian",
+    "type": "Veg",
+    "price": 110
+  },
+  {
+    "id": 30,
+    "name": "Chicken 65",
+    "cuisine": "SouthIndian",
+    "type": "Non-Veg",
+    "price": 230
+  }
+]
