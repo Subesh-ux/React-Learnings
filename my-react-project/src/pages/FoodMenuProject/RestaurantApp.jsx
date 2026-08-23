@@ -3,31 +3,27 @@ import FoodList from "../../assets/json/foodList.json";
 import Menu from "./Menu";
 
 export default function RestaurantApp() {
-    const orderId=Math.floor(Math.random()*1000000)
     const [foods, setFoods] = useState(
         FoodList.map(food => ({
             ...food,
             Quantity: 0,
-
         }))
     )
     const [selectedCategory, setSelectedCategory] = useState(["All"])
     const [selectedType, setSelectedType] = useState(["All"])
-    const [order,setOrder]=useState(false)
-
-
-
-
-
-
-
+    const [order, setOrder] = useState(false)
+    const [orderedQuantity, setOrderedQuantity] = useState(0)
+    const [orderedAmount, setOrderedAmount] = useState(0)
+    const [orderId, setOrderId] = useState(null)
 
     const totalQuantity = foods.reduce((acc, foods) => {
         return acc + foods.Quantity
     }, 0)
+
     const totalPrice = foods.reduce((acc, foods) => {
         return acc + (foods.price * foods.Quantity)
     }, 0)
+
     const addItems = (id) => {
         setFoods(
             foods.map(foods => {
@@ -41,6 +37,7 @@ export default function RestaurantApp() {
             })
         )
     }
+
     const removeItems = (id) => {
         setFoods(
             foods.map(foods => {
@@ -59,17 +56,10 @@ export default function RestaurantApp() {
         )
     }
 
-
-
-
-
-
-
     const checked = (event) => {
         let checkedData = selectedCategory.includes(event)
         return checkedData
     }
-
 
     const Events = (event) => {
         const category = event.target.id
@@ -96,9 +86,8 @@ export default function RestaurantApp() {
                 setSelectedCategory(newCategory)
             }
         }
-
-
     }
+
     let filteredFoodList;
 
     if (selectedCategory.includes("All")) {
@@ -113,22 +102,26 @@ export default function RestaurantApp() {
         setSelectedType([
             selectedType, type
         ])
-
-
-
     }
+
     let newFilterdFoodList
+
     if (selectedType.includes("All")) {
         newFilterdFoodList = filteredFoodList
     }
     else {
         newFilterdFoodList = filteredFoodList.filter(value => selectedType.includes(value.type))
     }
+
     const placed = () => {
         if (totalQuantity == 0) {
             alert("No Items In Cart.")
         }
         else {
+            setOrderedQuantity(totalQuantity)
+            setOrderedAmount(totalPrice)
+            setOrderId(Math.floor(Math.random() * 1000000))
+
             setOrder(true)
             setFoods(
                 foods.map(food => ({
@@ -138,6 +131,7 @@ export default function RestaurantApp() {
             )
         }
     }
+
     const reset = () => {
         setFoods(
             foods.map(food => ({
@@ -146,8 +140,6 @@ export default function RestaurantApp() {
             }))
         )
     }
-
-
 
     return (
         <>
@@ -287,43 +279,43 @@ export default function RestaurantApp() {
 
             </div>
             <div>
-                {order ?(<div>
-                <table>
-                    <tr>
-                        <th colSpan={2}>Order Placed Successfully</th>
-                    </tr>
-                    <tr>
-                        <td>Order Id</td>
-                        <td>{orderId}</td>
-                    </tr>
-                    <tr>
-                        <td>Total Items</td>
-                        <td>{totalQuantity}</td>
-                    </tr>
-                    <tr>
-                        <td>Amount</td>
-                        <td>{(totalPrice + (totalPrice * (5 / 100))).toFixed(2)}</td>
-                    </tr>
-                    <tr>
-                        <th colSpan={2}><pre>Thank You For Ordering!
-                            Your Food is being Prepared!!</pre></th>
-                    </tr>
-                </table>
-            </div> ):(
-                <Menu
-                    foods={newFilterdFoodList}
-                    addItems={addItems}
-                    removeItems={removeItems}
-                    totalQuantity={totalQuantity}
-                    totalPrice={totalPrice}
-                    placed={placed}
-                    reset={reset}
-                    Events={Events}
-                    checked={checked}
-                    foodType={foodType}
-                    order={order}
-                    
-                />)}
+                {order ? (<div>
+                    <table>
+                        <tr>
+                            <th colSpan={2}>Order Placed Successfully</th>
+                        </tr>
+                        <tr>
+                            <td>Order Id</td>
+                            <td>{orderId}</td>
+                        </tr>
+                        <tr>
+                            <td>Total Items</td>
+                            <td>{orderedQuantity}</td>
+                        </tr>
+                        <tr>
+                            <td>Amount</td>
+                            <td>{(orderedAmount + (orderedAmount * (5 / 100))).toFixed(2)}</td>
+                        </tr>
+                        <tr>
+                            <th colSpan={2}><pre>Thank You For Ordering!
+                                Your Food is being Prepared!!</pre></th>
+                        </tr>
+                    </table>
+                </div>) : (
+                    <Menu
+                        foods={newFilterdFoodList}
+                        addItems={addItems}
+                        removeItems={removeItems}
+                        totalQuantity={totalQuantity}
+                        totalPrice={totalPrice}
+                        placed={placed}
+                        reset={reset}
+                        Events={Events}
+                        checked={checked}
+                        foodType={foodType}
+                        order={order}
+
+                    />)}
 
             </div>
 

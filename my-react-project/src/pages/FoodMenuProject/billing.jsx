@@ -1,4 +1,4 @@
-export default function Billing({ foods, totalQuantity, totalPrice, addItems, removeItems,placed,reset ,order}) {
+export default function Billing({ foods, totalPrice, addItems, removeItems,placed,reset}) {
     
     
     return (
