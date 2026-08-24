@@ -1,0 +1,91 @@
+[
+    {
+        "FieldLabel" : "Employee Id",
+        "FieldId" :"EmployeeId",
+        "FieldName" : "EmployeeId",
+        "FieldType" : "text",
+        "FieldEnable" : true,
+        "FieldClass" : "main"
+
+    },
+    {
+        "FieldLabel" : "Employee Name",
+        "FieldId" :"EmployeeName",
+        "FieldName" : "EmployeeName",
+        "FieldType" : "text",
+        "FieldEnable" : true,
+        "FieldClass" : "main"
+        
+    },
+    {
+        "FieldLabel" : "Email",
+        "FieldId" :"Email",
+        "FieldName" : "Email",
+        "FieldType" : "email",
+        "FieldEnable" : true,
+        "FieldClass" : ""
+        
+    },
+    {
+        "FieldLabel" : "Phone",
+        "FieldId" :"Phone",
+        "FieldName" : "Phone",
+        "FieldType" : "tel",
+        "FieldEnable" : true,
+        "FieldClass" : ""
+        
+    },
+    {
+        "FieldLabel" : "Department",
+        "FieldId" :"Department",
+        "FieldName" : "Department",
+        "FieldType" : "select",
+        "FieldEnable" : true ,
+        "FieldClass" : ""
+    },
+    {
+        "FieldLabel" : "Gender",
+        "FieldId" :"Gender",
+        "FieldName" : "Gender",
+        "FieldType" : "radio",
+        "FieldEnable" : true ,
+        "FieldClass" : ""
+    },
+    {
+        "FieldLabel" : "Joining Date",
+        "FieldId" :"JoinDate",
+        "FieldName" : "JoinDate",
+        "FieldType" : "date",
+        "FieldEnable" : true ,
+        "FieldClass" : ""
+    },
+    {
+        "FieldLabel" : "Employment Type",
+        "FieldId" :"Employment",
+        "FieldName" : "Employment",
+        "FieldType" : "select",
+        "FieldEnable" : true ,
+        "FieldClass" : ""
+    },
+    {
+        "FieldLabel" : "Address",
+        "FieldId" :"Address",
+        "FieldName" : "Address",
+        "FieldType" : "textarea",
+        "FieldEnable" : true ,
+        "FieldRow"   : 5,
+        "FieldCol"  : 10,
+        "FieldClass" : ""
+    },
+    {
+        "FieldLabel" : "Skills",
+        "FieldId" :"Skills",
+        "FieldName" : "Skills",
+        "FieldType" : "checkbox",
+        "FieldEnable" : true ,
+        "FieldClass" : ""
+    }
+
+
+    
+]
