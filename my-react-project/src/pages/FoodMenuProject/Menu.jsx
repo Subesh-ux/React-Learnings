@@ -1,12 +1,6 @@
 import Billing from "./billing";
 export default function Menu({ foods, addItems, removeItems, totalQuantity, totalPrice, placed, reset,Events,foodType,checked,order}) {
     
-
-
-
-
-
-
     return (
         <>
             <h2>Menu</h2>
@@ -42,10 +36,10 @@ export default function Menu({ foods, addItems, removeItems, totalQuantity, tota
                     </tr>
                     <tr>
                         <th>FoodItem</th>
-                        <th>Category</th>
-                        <th>Type</th>
-                        <th>Price</th>
-                        <th>Add to Cart</th>
+                        {/* <th>Category</th>
+                        <th>Type</th> */}
+                        <th colSpan={2}>Price</th>
+                        <th colSpan={2}>Add to Cart</th>
                     </tr>
                 </thead>
                 {
@@ -55,10 +49,10 @@ export default function Menu({ foods, addItems, removeItems, totalQuantity, tota
                             <tbody>
                                 <tr key={value.id}>
                                     <td>{value.name}</td>
-                                    <td>{value.cuisine}</td>
-                                    <td>{value.type}</td>
-                                    <td>{value.price}</td>
-                                    <td><button onClick={() => addItems(value.id)}>+</button> {value.Quantity}
+                                    {/* <td>{value.cuisine}</td>
+                                    <td>{value.type}</td> */}
+                                    <td colSpan={2}>{value.price}</td>
+                                    <td colSpan={2}><button onClick={() => addItems(value.id)}>+</button> {value.Quantity} 
                                         <button onClick={() => removeItems(value.id)}>-</button>
                                     </td>
                                 </tr>
