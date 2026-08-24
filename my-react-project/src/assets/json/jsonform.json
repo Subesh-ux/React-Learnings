@@ -41,12 +41,14 @@
         "FieldName" : "Department",
         "FieldType" : "select",
         "FieldEnable" : true ,
-        "FieldClass" : ""
+        "FieldClass" : "",
+        "FieldOption" :["Developer","HR Management","Tester"]
     },
     {
         "FieldLabel" : "Gender",
-        "FieldId" :"Gender",
+        "FieldId" : "Gender",
         "FieldName" : "Gender",
+        "FieldOption" :["Male","Female","Others"],
         "FieldType" : "radio",
         "FieldEnable" : true ,
         "FieldClass" : ""
@@ -65,7 +67,8 @@
         "FieldName" : "Employment",
         "FieldType" : "select",
         "FieldEnable" : true ,
-        "FieldClass" : ""
+        "FieldClass" : "",
+        "FieldOption" : ["Full Time","Intern"]
     },
     {
         "FieldLabel" : "Address",
@@ -73,17 +76,18 @@
         "FieldName" : "Address",
         "FieldType" : "textarea",
         "FieldEnable" : true ,
-        "FieldRow"   : 5,
-        "FieldCol"  : 10,
+        "FieldRow"   : 3,
+        "FieldCol"  : 50,
         "FieldClass" : ""
     },
     {
         "FieldLabel" : "Skills",
-        "FieldId" :"Skills",
+        "FieldId" : "Skills",
         "FieldName" : "Skills",
         "FieldType" : "checkbox",
         "FieldEnable" : true ,
-        "FieldClass" : ""
+        "FieldClass" : "",
+        "FieldOption" : ["React","Angular","Python","Java","MySql","MongoDB"]
     }
 
 
