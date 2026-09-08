@@ -1,6 +1,14 @@
-import { Link } from "react-router"
+import {Link, useNavigate } from "react-router-dom";
 
-export default function NavBar() {
+export default function NavBar({isLoggedIn,logout}) {
+
+
+    const navigate = useNavigate()
+    
+    const handleLogout =()=>{
+        logout()
+        navigate("/login");
+    }
 
     return (
         <>
@@ -15,17 +23,24 @@ export default function NavBar() {
                         <Link to="/" className="nav-link">Home</Link>
                         <Link to="/Products" className="nav-link">Products</Link>
                         <Link to="/Orders" className="nav-link">Your Orders</Link>
-                        <Link to="/cart" className="nav-link">Cart</Link>
+                        <Link to="/Cart" className="nav-link">Cart</Link>
                     </div>
 
                     <div className="ms-auto">
-                        <Link to="/Login" className="btn btn-outline-primary rounded-pill px-4">
-                            Login
-                        </Link>
+                        {isLoggedIn ? (
+                            <button className="btn btn-outline-danger rounded-pill px-4" onClick={handleLogout}>Logout</button>
+                        ) : (
+                            <Link
+                                to="/Login"
+                                className="btn btn-outline-primary rounded-pill px-4"
+                            >
+                                Login
+                            </Link>
+                        )}
                     </div>
 
                 </div>
             </nav>
         </>
-    )
+    );
 }

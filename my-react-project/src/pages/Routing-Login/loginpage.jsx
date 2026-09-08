@@ -4,9 +4,11 @@ import formfields from "./formfields.json";
 import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 
-export default function Loginpage() {
+export default function Loginpage({loginSuccess}) {
     const [formData, setFormData] = useState(formfields);
     const navigate = useNavigate()
+
+
 
     return (
         <>
@@ -42,16 +44,23 @@ export default function Loginpage() {
                                     password: values.password
                                 })
                             })
-                                .then(response => response.json())
+                                .then(response => {
+                                    if(response.ok){
+                                        return response.json()
+                                    }
+                                    else
+                                        console.log("Invalid Password or Username")
+                                    return null
+                                    }
+                                )
                                 .then(data => {
-                                    if (data.token) {
+                                    if (data && data.token) {
                                         localStorage.setItem("token", data.token);
+                                        loginSuccess()
                                         navigate("/Home");
-                                    } else {
-                                        console.log("Invalid username or password");
                                     }
                                 })
-
+                            
 
                         }}
                     >
