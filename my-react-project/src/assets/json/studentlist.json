@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "name": "Arun",
+    "marks": 85
+  },
+  {
+    "id": 2,
+    "name": "Ravi",
+    "marks": 72
+  },
+  {
+    "id": 3,
+    "name": "Priya",
+    "marks": 91
+  },
+  {
+    "id": 4,
+    "name": "Karthik",
+    "marks": 68
+  },
+  {
+    "id": 5,
+    "name": "Divya",
+    "marks": 88
+  },
+  {
+    "id": 6,
+    "name": "Vijay",
+    "marks": 76
+  },
+  {
+    "id": 7,
+    "name": "Anjali",
+    "marks": 95
+  },
+  {
+    "id": 8,
+    "name": "Rahul",
+    "marks": 64
+  },
+  {
+    "id": 9,
+    "name": "Sneha",
+    "marks": 82
+  },
+  {
+    "id": 10,
+    "name": "Suresh",
+    "marks": 79
+  }
+]
