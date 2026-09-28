@@ -4,7 +4,7 @@ import formfields from "./formfields.json";
 import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 
-export default function Loginpage({loginSuccess}) {
+export default function Loginpage({ loginSuccess }) {
     const [formData, setFormData] = useState(formfields);
     const navigate = useNavigate()
 
@@ -45,13 +45,13 @@ export default function Loginpage({loginSuccess}) {
                                 })
                             })
                                 .then(response => {
-                                    if(response.ok){
+                                    if (response.ok) {
                                         return response.json()
                                     }
                                     else
-                                        console.log("Invalid Password or Username")
-                                    return null
-                                    }
+                                        alert("Invalid Password or Username");
+                                        return null
+                                }
                                 )
                                 .then(data => {
                                     if (data && data.token) {
@@ -60,7 +60,7 @@ export default function Loginpage({loginSuccess}) {
                                         navigate("/Home");
                                     }
                                 })
-                            
+
 
                         }}
                     >
